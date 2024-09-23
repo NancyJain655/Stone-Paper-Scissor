@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+   <!-- <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">-->
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <!-- SCORE DISPLAY BANNER -->
+    <div class="score-display">
+        <h1>Rock <br /> Paper <br /> Scissors</h1>
+        <div class="score-cards">
+            <div class="card">
+                <h3>Computer Score</h3>
+                <p id="computer-score"></p>
+            </div>
+            <div class="card">
+                <h3>Your<br> Score</h3>
+                <p id="player-score"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rules AND Next Button -->
+
+    <div class="btn-container">
+        <button class="btn" id="rules">Rules</button>
+        <button class="btn hide" id="next">Next</button>
+
+    </div>
+
+    <!-- Rules container model -->
+
+    <div class="rules-container hide">
+        <h2>Game Rules</h2>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+        <button class="close" id="close">X</button>
+    </div>
+
+    <!-- ICONS and CONNECTOR -->
+
+    <div class="icons-container ">
+        <div class="connecter1"></div>
+        <div class="connecter2"></div>
+        <div class="connecter3"></div>
+        <div class="icon-row1">
+            <div class="icon paper">
+                <img src="icons/images/paper.png" alt="paper" id="paper">
+            </div>
+            <div class="icon scissors">
+                <img src="/icons/images/scissors.png" alt="scissors" id="scissors">
+            </div>
+        </div>
+        <div class="icon-row2">
+            <div class="icon rock">
+                <img src="/icons/images/rock.png" alt="rock" id="rock">
+            </div>
+        </div>
+    </div>
+
+    <!-- Result -->
+    <div class="result-parent hide">
+        <div class="result-container">
+            <div class="icon-parent">
+
+                <p>YOU PICKED</p>
+                <div class="icon" id="player-chose">
+                    <img src="" alt="paper" id="player-selected-img">
+                </div>
+
+            </div>
+            <div class="game-status">
+                <h2>YOU WIN</h2>
+                <p>AGAINST PC</p>
+                <button class="play-again" id="play-again">Play Again</button>
+            </div>
+
+            <div class="icon-parent">
+
+                <p>PC PICKED</p>
+                <div class="icon" id="comp-chose">
+
+                    <img src="" alt="scissors" id="pc-selected-img">
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- Final Display-->
+    <div class="final-container ">
+
+        <div class="final-result ">
+            <div class="prize-container">
+                <img src="./icons/images/stars.png" alt="" id="stars">
+                <img src="./icons/images/prize.png" alt="" id="trophy">
+            </div>
+            <h2>Hurray !!</h2>
+            <p id="final-result">YOU WON THE GAME</p>
+            <button class="play-again" id="again">Play Again</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
